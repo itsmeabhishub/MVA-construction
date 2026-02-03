@@ -1,0 +1,130 @@
+import { Row, Col, Card, Typography } from "antd";
+import "./Project.css";
+import mallImg from'../../assets/mall.jpg'
+import jamuiStn from '../../assets/download.jpg'
+import lkrStn from '../../assets/lkr-station.jpg'
+import home from '../../assets/house.jpg'
+
+const { Title, Paragraph } = Typography;
+
+
+const Project = () => {
+  return (
+    <div className="projects-page">
+      {/* PAGE HEADER */}
+      <Row justify="center" className="projects-header">
+        <Col xs={24} md={18} lg={14} style={{ textAlign: "center" }}>
+          <Title level={1}>Our Projects</Title>
+          <Paragraph>
+            A snapshot of our major construction projects delivered across
+            railway infrastructure, commercial complexes, and urban development.
+          </Paragraph>
+        </Col>
+      </Row>
+      {/* PROJECT 1 */}
+      <Row gutter={[32, 32]} align="middle" className="project-row">
+        <Col xs={24} md={12}>
+          <Card
+            hoverable
+            cover={
+              <div className="image-placeholder">
+                Image Placeholder
+                <img src={jamuiStn} alt="Jamui Station" />
+              </div>
+            }
+          />
+        </Col>
+        <Col xs={24} md={12}>
+          <Title level={3}>Jamui Railway Station Redevelopment</Title>
+          <Paragraph>
+            Redevelopment of passenger platforms, waiting halls, roofing, and
+            circulation areas to improve safety, capacity, and commuter
+            experience.
+          </Paragraph>
+          
+        </Col>
+      </Row>
+
+      {/* PROJECT 2 */}
+      <Row
+        gutter={[32, 32]}
+        align="middle"
+        className="project-row reverse"
+      >
+        <Col xs={24} md={12}>
+          <Card
+            hoverable
+            cover={
+              <div className="image-placeholder">
+                Image Placeholder
+                <img src={lkrStn} alt="Lkr Station" />
+              </div>
+            }
+          />
+        </Col>
+
+        <Col xs={24} md={12}>
+          <Title level={3}>Lakhisarai Railway Station Modernization</Title>
+          <Paragraph>
+            Modern station development including concourse expansion,
+            commercial zones, drainage systems, and structural upgrades.
+          </Paragraph>
+          
+        </Col>
+      </Row>
+
+      {/* PROJECT 3 */}
+      <Row gutter={[32, 32]} align="middle" className="project-row">
+        <Col xs={24} md={12}>
+          <Card
+            hoverable
+            cover={
+              <div className="image-placeholder">
+                Image Placeholder
+                <img src={mallImg} alt="Mall Image" />
+              </div>
+            }
+          />
+        </Col>
+
+        <Col xs={24} md={12}>
+          <Title level={3}>City Mall Commercial Complex</Title>
+          <Paragraph>
+            Multi-storey shopping mall featuring retail outlets, food courts,
+            parking facilities, and modern architectural design.
+          </Paragraph>
+          
+        </Col>
+      </Row>
+
+      {/* PROJECT 4 */}
+      <Row
+        gutter={[32, 32]}
+        align="middle"
+        className="project-row reverse"
+      >
+        <Col xs={24} md={12}>
+          <Card
+            hoverable
+            cover={
+              <div className="image-placeholder">
+                Image Placeholder
+                <img src={home} alt="Home Image" />
+              </div>
+            }
+          />
+        </Col>
+
+        <Col xs={24} md={12}>
+          <Title level={3}>Urban Infrastructure Development</Title>
+          <Paragraph>
+            Construction of roads, drainage networks, and public infrastructure
+            projects following safety and quality standards.
+          </Paragraph>
+        </Col>
+      </Row>
+    </div>
+  )
+}
+
+export default Project

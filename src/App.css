@@ -1,0 +1,19 @@
+.main-container-app{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-container{
+  min-width: 100%;
+  flex: 1;
+  padding: 5px;
+}
+.bg-image{
+  background-image: url("./assets/bg-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}

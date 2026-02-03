@@ -1,0 +1,57 @@
+.projects-page {
+    padding: 40px 24px;
+    background: rgba(15, 23, 42, 0.75);
+    color: wheat;
+
+}
+
+.projects-header {
+    margin-bottom: 64px;
+}
+
+.project-row {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+}
+/* Reverse layout handled cleanly */
+.project-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Image placeholder for now */
+.image-placeholder {
+    height: 280px;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8c8c8c;
+    font-size: 16px;
+    font-weight: 500;
+}
+.image-placeholder img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projects-page h1,
+.projects-page h2,
+.projects-page h3,
+.projects-page h4,
+.projects-page h5,
+.projects-page p,
+.projects-page span,
+.projects-page .ant-typography {
+  color: #ffffff !important;
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+    .project-row {
+        margin-bottom: 56px;
+    }
+
+    .image-placeholder {
+        height: 220px;
+    }
+}

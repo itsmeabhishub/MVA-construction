@@ -1,0 +1,32 @@
+.contact-page {
+  padding: 40px 24px;
+}
+
+/* HEADER */
+.contact-header {
+  margin-bottom: 64px;
+}
+
+/* MAP */
+.map-section {
+  margin-top: 64px;
+}
+
+.map-placeholder {
+  height: 320px;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .map-placeholder {
+    height: 240px;
+  }
+}
