@@ -1,6 +1,6 @@
 import { Row, Col, Card, Typography } from "antd";
 import "./Project.css";
-import mallImg from'../../assets/mall.jpg'
+import mallImg from '../../assets/mall.jpg'
 import jamuiStn from '../../assets/download.jpg'
 import lkrStn from '../../assets/lkr-station.jpg'
 import home from '../../assets/house.jpg'
@@ -41,7 +41,7 @@ const Project = () => {
             circulation areas to improve safety, capacity, and commuter
             experience.
           </Paragraph>
-          
+
         </Col>
       </Row>
 
@@ -69,7 +69,7 @@ const Project = () => {
             Modern station development including concourse expansion,
             commercial zones, drainage systems, and structural upgrades.
           </Paragraph>
-          
+
         </Col>
       </Row>
 
@@ -93,7 +93,7 @@ const Project = () => {
             Multi-storey shopping mall featuring retail outlets, food courts,
             parking facilities, and modern architectural design.
           </Paragraph>
-          
+
         </Col>
       </Row>
 
@@ -118,8 +118,8 @@ const Project = () => {
         <Col xs={24} md={12}>
           <Title level={3}>Urban Infrastructure Development</Title>
           <Paragraph>
-            Construction of roads, drainage networks, and public infrastructure
-            projects following safety and quality standards.
+            Construction of high-quality residential homes with a strong focus on
+            safety, durability, and modern living standards.
           </Paragraph>
         </Col>
       </Row>
