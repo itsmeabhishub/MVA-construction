@@ -59,7 +59,7 @@ const ContactUs = () => {
                         <Paragraph>
                             <MailOutlined /> <strong>Email</strong>
                         </Paragraph>
-                        <Paragraph>info@mvaconstructions.com</Paragraph>
+                        <Paragraph>mvaconstructioninfratech@gmail.com</Paragraph>
 
                         <Divider />
 
