@@ -1,5 +1,6 @@
 .navbar-conatiner .ant-menu-item,
 :where(.css-dev-only-do-not-override-1d8anct).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected,
+:where(.css-1d8anct).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected,
 :where(.css-dev-only-do-not-override-1d8anct).ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover {
  background-color: #0a223c;
  color: #fff;

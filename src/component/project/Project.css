@@ -1,39 +1,49 @@
 .projects-page {
-    padding: 40px 24px;
-    background: rgba(15, 23, 42, 0.75);
-    color: wheat;
-
+  padding: 80px 24px;
+  background: rgba(15, 23, 42, 0.75);
 }
 
+/* Header */
 .projects-header {
-    margin-bottom: 64px;
+  margin-bottom: 80px;
 }
 
+/* Rows */
 .project-row {
-    max-width: 1200px;
-    margin: 0 auto 80px;
-}
-/* Reverse layout handled cleanly */
-.project-row.reverse {
-    flex-direction: row-reverse;
+  max-width: 1200px;
+  margin: 0 auto 96px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
 }
 
-/* Image placeholder for now */
-.image-placeholder {
-    height: 280px;
-    background-color: #f0f2f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #8c8c8c;
-    font-size: 16px;
-    font-weight: 500;
+.project-row.show {
+  opacity: 1;
+  transform: translateY(0);
 }
-.image-placeholder img{
+
+.project-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Card */
+.project-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.project-card img {
   width: 100%;
-  height: 100%;
+  height: 320px;
   object-fit: cover;
+  transition: transform 0.5s ease;
 }
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Text color fix */
 .projects-page h1,
 .projects-page h2,
 .projects-page h3,
@@ -45,13 +55,13 @@
   color: #ffffff !important;
 }
 
-/* Mobile spacing */
+/* Mobile */
 @media (max-width: 768px) {
-    .project-row {
-        margin-bottom: 56px;
-    }
+  .project-row {
+    margin-bottom: 64px;
+  }
 
-    .image-placeholder {
-        height: 220px;
-    }
+  .project-card img {
+    height: 220px;
+  }
 }
