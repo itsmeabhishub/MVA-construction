@@ -17,7 +17,7 @@
 .hedaer-title {
     font-size: 26px;
     font-family: math;
-    font-style: italic;
+    padding-left: 10px;
     font-weight: 700;
     cursor: pointer;
     color: #ffffff;
