@@ -29,7 +29,7 @@
   line-height: 1.15;
 }
 
-.contact-header p {
+.contact-header .ant-typography {
   font-size: 17px;
   color: #e5e7eb;
   max-width: 640px;

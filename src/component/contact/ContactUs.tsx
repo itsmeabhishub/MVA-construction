@@ -16,12 +16,45 @@ import {
   ClockCircleOutlined,
 } from "@ant-design/icons";
 import "./ContactUs.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const { Title, Paragraph } = Typography;
 const { TextArea } = Input;
 
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    name:'',
+    email:'',
+    phone:'',
+    message:''
+  })
+
+   const onValuesChange = (_:any, allValues:any) => {
+    setFormData(allValues);
+  };
+
+  const isDisabled =
+    !formData.name || !formData.email || !formData.message;
+
+  const onFinish = () => {
+    const whatsappNumber = "919123497478"; // 🔴 replace with your number
+
+    const message = `
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Message: ${formData.message}
+    `;
+
+    const whatsappUrl =
+      "https://wa.me/" +
+      whatsappNumber +
+      "?text=" +
+      encodeURIComponent(message);
+
+    window.open(whatsappUrl, "_blank");
+  };
+
     useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -31,7 +64,7 @@ const ContactUs = () => {
       <Row justify="center" className="contact-header">
         <Col xs={24} md={16} style={{ textAlign: "center" }}>
           <Title level={1}>Get in Touch</Title>
-          <Paragraph>
+          <Paragraph className="p-text">
             We’re here to help with your construction inquiries and project
             discussions.
           </Paragraph>
@@ -95,28 +128,60 @@ const ContactUs = () => {
         {/* SEND MESSAGE */}
         <Col xs={24} md={10}>
           <Card title="Send Us a Message" bordered={false}>
-            <Form layout="vertical" disabled>
-              <Form.Item label="Full Name" required>
-                <Input placeholder="Enter your name" />
-              </Form.Item>
+      <Form
+        layout="vertical"
+        onValuesChange={onValuesChange}
+        onFinish={onFinish}
+      >
+        <Form.Item
+          label="Full Name"
+          name="name"
+           rules={[
+            { required: true, message: "Name is required" },
+            {
+              pattern: /^[A-Za-z ]+$/,
+              message: "Only letters and spaces allowed",
+            },
+          ]}
+        >
+          <Input placeholder="Enter your name" />
+        </Form.Item>
 
-              <Form.Item label="Email Address" required>
-                <Input placeholder="Enter your email" />
-              </Form.Item>
+        <Form.Item
+          label="Email Address"
+          name="email"
+          rules={[
+            { required: true, message: "Email is required" },
+            { type: "email", message: "Enter a valid email" },
+          ]}
+        >
+          <Input placeholder="Enter your email" />
+        </Form.Item>
 
-              <Form.Item label="Contact Number">
-                <Input placeholder="Enter your phone number" />
-              </Form.Item>
+        <Form.Item label="Contact Number" name="phone">
+          <Input placeholder="Enter your phone number" />
+        </Form.Item>
 
-              <Form.Item label="Message" required>
-                <TextArea rows={4} placeholder="Write your message here" />
-              </Form.Item>
+        <Form.Item
+          label="Message"
+          name="message"
+          rules={[{ required: true, message: "Enter your message" }]}
+        >
+          <TextArea rows={4} placeholder="Write your message here" />
+        </Form.Item>
 
-              <Button type="primary" size="large" block disabled>
-                Send Message
-              </Button>
-            </Form>
-          </Card>
+        <Button
+          type="primary"
+          size="large"
+          htmlType="submit"
+          block
+          icon={<WhatsAppOutlined />}
+          disabled={isDisabled}
+        >
+          Send via WhatsApp
+        </Button>
+      </Form>
+    </Card>
         </Col>
 
         {/* OFFICE DETAILS */}
