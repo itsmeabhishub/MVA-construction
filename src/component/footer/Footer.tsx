@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Left Section */}
         <div className="footer-left">
-          <h3>MVA Constructions</h3>
+          <h3>MVA Construction and Infratech</h3>
           <p className="description">
             Building quality infrastructure with trust, innovation, and
             excellence.

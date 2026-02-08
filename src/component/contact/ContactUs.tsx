@@ -191,7 +191,7 @@ Message: ${formData.message}
               <EnvironmentOutlined /> <strong>Address</strong>
             </Paragraph>
             <Paragraph>
-              MVA Constructions <br />
+              MVA Construction and Infratech<br />
               Station Road, Satgama <br />
               Jamui, Bihar – 811307
             </Paragraph>
