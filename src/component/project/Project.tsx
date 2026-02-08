@@ -1,13 +1,6 @@
 import { Row, Col, Card, Typography } from "antd";
 import "./Project.css";
 
-import jamuiStn from "../../assets/JmuRailway.png";
-import lkrStn from "../../assets/lkr-station.jpg";
-import highwayImg from "../../assets/highway.jpg";
-import bridgeImg from "../../assets/bridge.jpg";
-import mallImg from "../../assets/mall.jpg";
-import homeImg from "../../assets/homeImg.png";
-
 const { Title, Paragraph } = Typography;
 
 const Project = () => {
@@ -30,9 +23,9 @@ const Project = () => {
 
           <Col xs={24} md={12}>
             <div className="project-header-images">
-              <img src={jamuiStn} alt="Railway Project" />
-              <img src={bridgeImg} alt="Bridge Project" />
-              <img src={highwayImg} alt="Highway Project" />
+              <img src='https://res.cloudinary.com/dikezuoz5/image/upload/v1770566952/JmuRailway_q3gusu.png' alt="Railway Project" />
+              <img src='https://res.cloudinary.com/dikezuoz5/image/upload/v1770566196/bridge_cj4qll.jpg' alt="Bridge Project" />
+              <img src='https://res.cloudinary.com/dikezuoz5/image/upload/v1770566952/highway_uujq8x.jpg' alt="Highway Project" />
             </div>
           </Col>
         </Row>
@@ -43,7 +36,7 @@ const Project = () => {
         <Row gutter={[24, 32]}>
           <Col xs={24} md={8}>
             <Card hoverable className="project-card">
-              <img src={jamuiStn} alt="Jamui Station" />
+              <img src='https://res.cloudinary.com/dikezuoz5/image/upload/v1770566952/JmuRailway_q3gusu.png' alt="Jamui Station" />
               <Title level={4}>Jamui Railway Station</Title>
               <Paragraph>
                 Redevelopment of platforms, roofing systems, passenger amenities,
@@ -54,7 +47,7 @@ const Project = () => {
 
           <Col xs={24} md={8}>
             <Card hoverable className="project-card">
-              <img src={lkrStn} alt="Lakhisarai Station" />
+              <img src='https://res.cloudinary.com/dikezuoz5/image/upload/v1770569091/WhatsApp_Image_2026-02-03_at_10.47.35_s2g6t5.jpg' alt="Lakhisarai Station" />
               <Title level={4}>Lakhisarai Railway Station</Title>
               <Paragraph>
                 Modernization of station infrastructure including concourse
@@ -65,7 +58,7 @@ const Project = () => {
 
           <Col xs={24} md={8}>
             <Card hoverable className="project-card">
-              <img src={highwayImg} alt="Highway Construction" />
+              <img src='https://res.cloudinary.com/dikezuoz5/image/upload/v1770566952/highway_uujq8x.jpg' alt="Highway Construction" />
               <Title level={4}>Highway Construction</Title>
               <Paragraph>
                 Construction of high-quality highways with reinforced pavement,
@@ -76,7 +69,7 @@ const Project = () => {
 
           <Col xs={24} md={8}>
             <Card hoverable className="project-card">
-              <img src={bridgeImg} alt="Bridge Project" />
+              <img src='https://res.cloudinary.com/dikezuoz5/image/upload/v1770566196/bridge_cj4qll.jpg' alt="Bridge Project" />
               <Title level={4}>Bridge & Flyover Projects</Title>
               <Paragraph>
                 Execution of bridge and flyover works with strong foundations,
@@ -87,7 +80,7 @@ const Project = () => {
 
           <Col xs={24} md={8}>
             <Card hoverable className="project-card">
-              <img src={mallImg} alt="Commercial Complex" />
+              <img src='https://res.cloudinary.com/dikezuoz5/image/upload/v1770572868/mall11_wtd5be.jpg' alt="Commercial Complex" />
               <Title level={4}>Commercial Complex</Title>
               <Paragraph>
                 Multi-storey commercial buildings including shopping complexes,
@@ -98,7 +91,7 @@ const Project = () => {
 
           <Col xs={24} md={8}>
             <Card hoverable className="project-card">
-              <img src={homeImg} alt="Residential Housing" />
+              <img src='https://res.cloudinary.com/dikezuoz5/image/upload/v1770568226/Residential_n5dll2.jpg' alt="Residential Housing" />
               <Title level={4}>Residential Housing</Title>
               <Paragraph>
                 Quality residential housing projects built with focus on safety,

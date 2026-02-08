@@ -12,20 +12,38 @@
     width: 25%;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    gap: 8px;
 }
 
+/* LOGO (NEW – does not affect old behavior) */
+.header-logo {
+    height: 40px;
+    flex-shrink: 0;
+}
+
+/* TEXT (OLD CLASS – untouched logic) */
 .hedaer-title {
-    font-size: 26px;
+    font-size: 22px;
     font-family: math;
-    padding-left: 10px;
+    padding-left: 6px;
     font-weight: 700;
     cursor: pointer;
     color: #ffffff;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .hedaer-title:hover {
     color: #fbbf24; /* golden hover */
+}
+
+/* OPTIONAL SUBTEXT */
+.header-subtitle {
+    font-size: 12px;
+    color: #fbbf24;
+    font-weight: 500;
+    margin-top: -2px;
 }
 
 /* RIGHT */
@@ -68,7 +86,7 @@
     box-shadow: none !important;
 }
 
-/* Ant Design Menu Items (very important) */
+/* Ant Design Menu */
 .main-header .ant-menu {
     background: transparent !important;
     border-bottom: none;
@@ -85,9 +103,18 @@
     color: #1677ff !important;
 }
 
-
-
 /* Prevent white flash on click */
 .main-header .ant-menu-item:active {
     background: transparent !important;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .header-logo {
+        height: 34px;
+    }
+
+    .hedaer-title {
+        font-size: 20px;
+    }
 }
