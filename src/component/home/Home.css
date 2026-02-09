@@ -372,3 +372,12 @@ footer {
     padding: 64px 16px;
   }
 }
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    .hero-content p {
+      font-size: 15px;
+    }
+}

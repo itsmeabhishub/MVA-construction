@@ -11,7 +11,7 @@
 .main-header-left {
     width: 25%;
     display: flex;
-    align-items: center;
+  align-items: center;
     cursor: pointer;
     gap: 8px;
 }
@@ -49,9 +49,9 @@
 /* RIGHT */
 .main-header-right {
     width: 75%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 /* ===============================
@@ -90,6 +90,8 @@
 .main-header .ant-menu {
     background: transparent !important;
     border-bottom: none;
+    width: 290px;
+    font-size: 16px;
 }
 
 .main-header .ant-menu-item {
@@ -116,5 +118,11 @@
 
     .hedaer-title {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hedaer-title {
+        font-size: 16px;
     }
 }

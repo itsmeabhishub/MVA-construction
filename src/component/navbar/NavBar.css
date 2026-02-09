@@ -1,16 +1,60 @@
-.navbar-conatiner .ant-menu-item,
-:where(.css-dev-only-do-not-override-1d8anct).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected,
-:where(.css-1d8anct).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected,
-:where(.css-dev-only-do-not-override-1d8anct).ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover {
- background-color: #0a223c;
- color: #fff;
+.navbar-conatiner {
+  display: flex;
+  align-items: center;
 }
-/* .ant-menu-horizontal .ant-menu-item-divider {
-  display: inline-block;
-  width: 1px;
-  height: 24px;
-  background-color: rgba(255, 255, 255, 0.4);
-  margin: 0 12px;
 
+.navbar-conatiner .ant-menu
+/* =======================
+   DESKTOP / MOBILE SWITCH
+======================= */
+.desktop-menu {
+  display: block;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* BURGER BUTTON */
+.burger-btn {
+  color: #ffffff !important;
+  font-size: 20px;
+}
+
+/* DRAWER */
+.menu-drawer .ant-drawer-body {
+  padding: 0;
+}
+
+.menu-drawer .ant-menu {
+  border-right: none;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+/* =======================
+   EXISTING MENU COLORS
+   (UNCHANGED)
+======================= */
+/* .navbar-conatiner .ant-menu-item,
+:where(.css-dev-only-do-not-override-1d8anct).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-selected,
+:where(.css-1d8anct).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-selected,
+:where(.css-dev-only-do-not-override-1d8anct)
+  .ant-menu-light
+  .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover {
+  background-color: #0a223c;
+  color: #fff;
 } */
-
